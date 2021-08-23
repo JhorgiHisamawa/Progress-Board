@@ -1,4 +1,4 @@
-# todo-API
+# PROGRESS BOARD (API)
 
 todo API is the technical test from Kriya People to make API like Kanban Board to check how far progress of the user on his/her team (using pg library and fastify framework)
 
