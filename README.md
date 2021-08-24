@@ -1,6 +1,6 @@
 # PROGRESS BOARD (API)
 
-todo API is the technical test from Kriya People to make API like Kanban Board to check how far progress of the user on his/her team (using pg library and fastify framework)
+todo API is the technical test from Kriya People to make API like Kanban Board to check how far progress of the user on his/her team (using pg library and express framework)
 
 This is the `.env.development` file setting :
 ```
