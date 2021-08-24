@@ -7,7 +7,7 @@ class TodosController {
         try {
             const client = await pool.connect();
 
-            const sql = "SELECT * FROM todos";
+            const sql = "SELECT * FROM todos;";
             const { rows } = await client.query(sql);
             const result = rows;
 
@@ -28,7 +28,7 @@ class TodosController {
             const client = await pool.connect();
             const id = parseInt(req.params.id);
             const { rows } = await client.query({
-                text: "SELECT * FROM todos WHERE id = $1",
+                text: "SELECT * FROM todos WHERE id = $1;",
                 values: [id]
             });
             const result = rows;
@@ -52,7 +52,7 @@ class TodosController {
             const { name, description, status } = req.body;
 
             await client.query({
-                text: "INSERT INTO todos(name, description, status) VALUES($1,$2,$3)",
+                text: "INSERT INTO todos(name, description, status) VALUES($1,$2,$3);",
                 values: [name, description, status]
             });
 
